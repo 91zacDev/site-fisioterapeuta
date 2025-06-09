@@ -1,5 +1,6 @@
 import React from "react";
 
+// Home.jsx
 export default function Home() {
   return (
     <main className="bg-white text-gray-800">
@@ -32,7 +33,7 @@ export default function Home() {
       {/* Sobre o Profissional */}
       <section id="sobre" className="py-20 px-4 bg-white">
         <div className="max-w-4xl mx-auto text-center">
-          <h3 className="text-3xl font-bold mb-6 text-blue-700">Sobre o Dr. Rafael Oliveira</h3>
+ <h3 className="text-3xl font-bold mb-6 text-blue-700">Sobre o Dr. Rafael Oliveira</h3>
           <p className="text-gray-700 leading-relaxed text-base md:text-lg">
             Fisioterapeuta especializado no tratamento de dores musculares, reabilitação e melhora da qualidade de vida.
             Atendimento humanizado com foco em resultados eficazes e duradouros.
@@ -44,7 +45,7 @@ export default function Home() {
       <section id="servicos" className="py-20 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <h3 className="text-3xl font-bold mb-12 text-green-600 text-center">Serviços Oferecidos</h3>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
               <h4 className="text-xl font-semibold text-blue-700 mb-3">Reabilitação Ortopédica</h4>
               <p className="text-gray-600">Tratamentos personalizados para lesões musculares e articulares.</p>
@@ -64,7 +65,7 @@ export default function Home() {
       {/* Contato */}
       <section id="contato" className="py-20 px-4 bg-white">
         <div className="max-w-2xl mx-auto text-center">
-          <h3 className="text-3xl font-bold mb-6 text-blue-700">Entre em Contato</h3>
+ <h3 className="text-3xl font-bold mb-6 text-blue-700">Entre em Contato</h3>
           <p className="mb-6 text-gray-700">Fale pelo WhatsApp ou preencha o formulário abaixo:</p>
 
           <a
@@ -75,9 +76,9 @@ export default function Home() {
             WhatsApp
           </a>
 
-          <form className="grid grid-cols-1 gap-4 text-left">
-            <input type="text" placeholder="Seu nome" className="border border-gray-300 p-3 rounded-md w-full" />
-            <input type="email" placeholder="Seu e-mail" className="border border-gray-300 p-3 rounded-md w-full" />
+          <form className="grid grid-cols-1 gap-4 text-left w-full">
+ <input type="text" placeholder="Seu nome" className="border border-gray-300 p-3 rounded-md w-full" />
+ <input type="email" placeholder="Seu e-mail" className="border border-gray-300 p-3 rounded-md w-full" />
             <textarea rows="4" placeholder="Mensagem" className="border border-gray-300 p-3 rounded-md w-full"></textarea>
             <button
               type="submit"
