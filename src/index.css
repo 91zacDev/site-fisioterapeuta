@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* links sem sublinhado por padrão */
+a {@apply no-underline;}
+a:hover {@apply underline;}
+
+/* tipografia básica */
+body {@apply font-sans text-gray-800 bg-white;}
+h1,h2,h3,h4 {@apply font-semibold;}
