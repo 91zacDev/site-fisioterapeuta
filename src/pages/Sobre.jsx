@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 export default function Sobre() {
   return (
@@ -7,10 +8,10 @@ export default function Sobre() {
       <header className="bg-gradient-to-r from-green-500 to-blue-500 text-white py-6 px-4 shadow-md">
         <div className="max-w-6xl mx-auto flex justify-between items-center">
           <h1 className="text-2xl font-bold">Dr. Rafael Oliveira</h1>
-          <nav className="space-x-4">
-            <a href="/" className="hover:underline">Home</a>
-            <a href="/servicos" className="hover:underline">Serviços</a>
-            <a href="/contato" className="hover:underline">Contato</a>
+          <nav className="space-x-4 text-sm md:text-base">
+            <Link to="/" className="hover:underline">Home</Link>
+            <Link to="/servicos" className="hover:underline">Serviços</Link>
+            <Link to="/contato" className="hover:underline">Contato</Link>
           </nav>
         </div>
       </header>

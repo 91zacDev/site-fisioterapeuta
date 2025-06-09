@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Servicos() {
   return (
@@ -8,9 +9,9 @@ export default function Servicos() {
         <div className="max-w-6xl mx-auto flex justify-between items-center">
           <h1 className="text-2xl font-bold">Dr. Rafael Oliveira</h1>
           <nav className="space-x-4">
-            <a href="/" className="hover:underline">Home</a>
-            <a href="/sobre" className="hover:underline">Sobre</a>
-            <a href="/contato" className="hover:underline">Contato</a>
+            <Link to="/" className="hover:underline">Home</Link>
+            <Link to="/sobre" className="hover:underline">Sobre</Link>
+            <Link to="/contato" className="hover:underline">Contato</Link>
           </nav>
         </div>
       </header>

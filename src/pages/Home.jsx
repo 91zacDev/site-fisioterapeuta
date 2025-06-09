@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 // Home.jsx
 export default function Home() {
@@ -9,9 +10,9 @@ export default function Home() {
         <div className="max-w-6xl mx-auto px-4 flex justify-between items-center">
           <h1 className="text-2xl md:text-3xl font-bold">Dr. Rafael Oliveira</h1>
           <nav className="space-x-6 text-sm md:text-base">
-            <a href="#sobre" className="hover:text-gray-200 transition">Sobre</a>
-            <a href="#servicos" className="hover:text-gray-200 transition">Serviços</a>
-            <a href="#contato" className="hover:text-gray-200 transition">Contato</a>
+ <Link to="/sobre" className="hover:text-gray-200 transition">Sobre</Link>
+ <Link to="/servicos" className="hover:text-gray-200 transition">Serviços</Link>
+ <Link to="/contato" className="hover:text-gray-200 transition">Contato</Link>
           </nav>
         </div>
       </header>
